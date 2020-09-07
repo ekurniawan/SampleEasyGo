@@ -23,6 +23,7 @@ namespace SampleXamarinJuly
             InitializeComponent();
         }
 
+        //ambil api dari easy go API
         private async Task<MyResult> GetAPI(MyParam param)
         {
             using (HttpClient client = new HttpClient())
