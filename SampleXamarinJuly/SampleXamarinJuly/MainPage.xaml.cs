@@ -36,7 +36,7 @@ namespace SampleXamarinJuly
                     var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
                     content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                    content.Headers.Add("Token", "");
+                    content.Headers.Add("Token", "<isi token>");
                     //await DisplayAlert("Ket", $"{await content.ReadAsStringAsync()}", "OK");
                     var response = await client.PostAsync(url, content);
                     if (!response.IsSuccessStatusCode)
